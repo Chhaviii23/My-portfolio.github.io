@@ -1,0 +1,85 @@
+*{
+  margin:0;padding:0;box-sizing:border-box;
+}
+body{
+  font-family: 'Segoe UI',Arial,sans-serif;
+  background:white; color:black; line-height:1.6;
+}
+h2{
+  text-align:center;color:rgb(66, 174, 241);margin-bottom:15px;
+}
+a{
+  text-decoration:none;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  color:#fff; text-align:center; padding:80px 20px;
+}
+header img{
+  width:130px; height:130px; border-radius:50%; border:3px solid white;
+}
+header h1{font-size:2em;margin-top:10px;}
+header p{font-size:1.1em;}
+
+/* NAV */
+nav{
+  background:lightskyblue;text-align:center;
+}
+nav a{
+  color:#fff;padding:14px 18px;display:inline-block;font-weight:bold;
+}
+nav a:hover{background:#004f88;}
+
+/* SECTIONS */
+section{
+  padding:50px 20px; max-width:1000px; margin:auto;
+  background:#fff; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  margin-top:25px;
+}
+
+/* ABOUT */
+#about{text-align:center;}
+#about p{margin-top:10px;}
+
+/* SKILLS */
+.skill{margin:12px 0;background:#ddd;border-radius:20px;}
+.skill div{
+  height:22px;border-radius:20px;color:#fff;text-align:center;font-size:0.9em;line-height:22px;
+}
+.html{width:90%;background:#0077cc;}
+.css{width:85%;background:#00aaff;}
+.js{width:20%;background:#005fa3;}
+
+/* PROJECTS */
+.projects{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:25px;
+}
+.project{
+  width:280px;background:white;padding:15px;border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);transition:transform 0.3s;
+}
+.project:hover{transform:scale(1.03);}
+.project img{width:100%;border-radius:10px;margin-bottom:10px;}
+.project h3{color:#0077cc;}
+
+/* TESTIMONIALS */
+.testimonial{
+  background:white;padding:15px;border-left:5px solid #0077cc;border-radius:8px;margin:15px 0;
+}
+.testimonial p{font-style:italic;}
+.testimonial h4{text-align:right;color:rgb(62, 62, 211);margin-top:8px;}
+
+/* CONTACT */
+#contact{text-align:center;}
+.socials img{width:40px;margin:8px;transition:0.3s;}
+.socials img:hover{transform:scale(1.2);}
+#contact a{color:rgb(88, 88, 233);}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  nav a{display:block;border-bottom:1px solid lightskyblue;}
+  .project{width:90%;}
+  header h1{font-size:1.7em;}
+}
