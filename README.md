@@ -1,4 +1,4 @@
-My Portfolio Website
+<h1> My Portfolio Website </h1>
 
 A personal portfolio website built using HTML, CSS, and JavaScript, designed to showcase my skills, projects, and professional presence online. This project demonstrates frontend development fundamentals and interactive UI elements including dark/light theme toggle, typing animation, scroll progress indicator, skill bars, project cards, testimonials, and smooth scroll animations.
 
