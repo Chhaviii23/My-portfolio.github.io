@@ -5,37 +5,38 @@ A personal portfolio website built using HTML, CSS, and JavaScript, designed to 
 🔗 Live Demo: Hosted on GitHub Pages
 📂 Repository: https://github.com/Chhaviii23/My-portfolio.github.io
 
-<h3> 🧠 Features </h3>
+<h2> 🧠 Features </h2>
+<ol>
+<li>Clean and responsive UI for portfolio showcase</li>
 
-Clean and responsive UI for portfolio showcase
+<li>Dark/Light theme toggle with localStorage support</li>
 
-Dark/Light theme toggle with localStorage support
+<li>Scroll progress bar at the top</li>
 
-Scroll progress bar at the top
+<li>Typing effect animation</li>
 
-Typing effect animation
+<li>Skill bar animations on scroll</li
 
-Skill bar animations on scroll
+<li>Interactive project cards</li>
 
-Interactive project cards
+<li>Testimonials section</li>
 
-Testimonials section
+<li>Back-to-top button</li>
 
-Back-to-top button
+<li>Smooth reveal animations on scroll</li>
+</ol>
 
-Smooth reveal animations on scroll
+<h2> 🛠️ Technologies Used </h2>
+<ol>
+<li>HTML5 – Markup and content structure</li>
 
-<h3> 🛠️ Technologies Used </h3>
+<li>CSS3 – Styling, grid layouts, transitions</li>
 
-HTML5 – Markup and content structure
+<li>JavaScript – DOM interaction and dynamic effects</li>
 
-CSS3 – Styling, grid layouts, transitions
+<h2> 🚀 How to Run Locally </h2>
 
-JavaScript – DOM interaction and dynamic effects
-
-<h3> 🚀 How to Run Locally </h3>
-
-To view this project on your computer:
+<h3>To view this project on your computer:</h3>
 
 1. Clone the Repository
 git clone https://github.com/Chhaviii23/My-portfolio.github.io.git
@@ -53,18 +54,18 @@ Right-click → Open With → Browser
 
 ⚠️ No backend setup or installation is needed because this is a static website.
 
-<h4> 📁 Folder Structure (Example) </h4>
-My-portfolio.github.io/
-├── index.html
-├── web.css
-├── script1.js
-├── MyPhoto.jpg
-├── card1.jpg
-├── card2.jpg
-├── github-logo.png
-└── social icons...
+<h2> 📁 Folder Structure (Example) </h2>
+My-portfolio.github.io/<br>
+├── index.html<br>
+├── web.css<br>
+├── script1.js<br>
+├── MyPhoto.jpg<br>
+├── card1.jpg<br>
+├── card2.jpg<br>
+├── github-logo.png<br>
+└── social icons...<br>
 
-<h3> 🎯 Deployment </h3>
+<h2> 🎯 Deployment </h2>
 
 This site is deployed automatically via GitHub Pages using the repository name My-portfolio.github.io, so the live version is hosted at:
 
@@ -74,7 +75,7 @@ https://Chhaviii23.github.io/My-portfolio.github.io
 GitHub Pages serves static HTML/CSS/JS content directly from the repository’s main branch. No server configuration required. 
 GitHub
 
-<h3> 📌 Contribution </h3>
+<h2> 📌 Contribution </h2>
 
 This is a personal project, but feel free to:
 
