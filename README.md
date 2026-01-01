@@ -5,7 +5,7 @@ A personal portfolio website built using HTML, CSS, and JavaScript, designed to 
 🔗 Live Demo: Hosted on GitHub Pages
 📂 Repository: https://github.com/Chhaviii23/My-portfolio.github.io
 
-🧠 Features
+<h3> 🧠 Features </h3>
 
 Clean and responsive UI for portfolio showcase
 
@@ -25,7 +25,7 @@ Back-to-top button
 
 Smooth reveal animations on scroll
 
-🛠️ Technologies Used
+<h3> 🛠️ Technologies Used </h3>
 
 HTML5 – Markup and content structure
 
@@ -33,7 +33,7 @@ CSS3 – Styling, grid layouts, transitions
 
 JavaScript – DOM interaction and dynamic effects
 
-🚀 How to Run Locally
+<h3> 🚀 How to Run Locally </h3>
 
 To view this project on your computer:
 
@@ -53,7 +53,7 @@ Right-click → Open With → Browser
 
 ⚠️ No backend setup or installation is needed because this is a static website.
 
-📁 Folder Structure (Example)
+<h4> 📁 Folder Structure (Example) </h4>
 My-portfolio.github.io/
 ├── index.html
 ├── web.css
@@ -64,7 +64,7 @@ My-portfolio.github.io/
 ├── github-logo.png
 └── social icons...
 
-🎯 Deployment
+<h3> 🎯 Deployment </h3>
 
 This site is deployed automatically via GitHub Pages using the repository name My-portfolio.github.io, so the live version is hosted at:
 
@@ -74,7 +74,7 @@ https://Chhaviii23.github.io/My-portfolio.github.io
 GitHub Pages serves static HTML/CSS/JS content directly from the repository’s main branch. No server configuration required. 
 GitHub
 
-📌 Contribution
+<h3> 📌 Contribution </h3>
 
 This is a personal project, but feel free to:
 
