@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Universal selector */
+    * { font-family: Poppins, sans-serif; }
+
+    /* ID selector */
+    #intro { color: royalblue; }
+
+    /* Class selector */
+    .highlight { background-color: lightyellow; }
+
+    /* Descendant selector */
+    div p { color: darkgreen; }
+
+    /* Group selector */
+    h1, h2 { text-transform: uppercase; color: black; }
+  </style>
+</head>
+<body>
+  <h1>Selectors Showcase</h1>
+
+  <h2 id="intro">Understanding Different Selectors</h2>
+
+  <p class="highlight">Class selectors help maintain consistency across multiple elements.</p>
+
+  <div>
+    <p>This paragraph is inside a div — styled with a descendant selector.</p>
+  </div>
+
+  <footer>
+    <p>The universal selector ensures consistent font across the page.</p>
+  </footer>
+</body>
+</html>

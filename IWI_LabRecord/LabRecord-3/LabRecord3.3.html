@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Functions and Scope</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#e8f4ff;
+            padding:20px;
+        }
+        .box{
+            width:600px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius:6px;
+            border:1px solid #ccc;
+        }
+        pre{
+            background:#eee;
+            padding:12px;
+            border-radius:4px;
+            white-space:pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>User Functions and Scope</h2>
+    <p>Some examples using functions and how scope works.</p>
+    <pre id="out"></pre>
+</div>
+
+<script>
+    let out = "";
+
+    out += "--- User Function ---\n";
+
+    function greet(name){
+        return "Hello " + name + "! Welcome.\n";
+    }
+
+    out += greet("Chhavi") + "\n";
+
+    out += "--- Scope Examples ---\n";
+
+    function checkVar(){
+        if(true){
+            var msg = "This is a var variable.";
+        }
+        out += msg + "\n";
+    }
+    checkVar();
+
+    if(true){
+        let a = "This is a let inside a block.";
+        const b = "This is a const inside a block.";
+        out += a + "\n";
+        out += b + "\n";
+    }
+
+    try{
+        out += blockLet;
+    }catch(e){
+        out += "Error: 'let' can't be used outside its block.\n";
+    }
+
+    const app = "ScopeDemo";
+    out += "App name is '" + app + "' and can't be changed.\n";
+
+    document.getElementById("out").textContent = out;
+</script>
+
+</body>
+</html>

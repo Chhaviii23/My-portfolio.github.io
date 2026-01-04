@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#e8f4ff;
+            padding:20px;
+        }
+        .box{
+            width:500px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border:1px solid #ccc;
+            border-radius:6px;
+        }
+        input{
+            width:95%;
+            padding:8px;
+            margin-top:5px;
+            margin-bottom:5px;
+            border:1px solid #bbb;
+            border-radius:4px;
+        }
+        button{
+            padding:10px 15px;
+            background:#28a745;
+            border:none;
+            color:white;
+            border-radius:4px;
+            cursor:pointer;
+        }
+        #msg{
+            color:red;
+            font-size:0.9em;
+            height:18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Simple Form Validation</h2>
+    <p>Try typing less than 5 characters and submit.</p>
+
+    <form id="form">
+        <label>Username (min 5 chars):</label><br>
+        <input type="text" id="user">
+        <div id="msg"></div>
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+    let form = document.getElementById("form");
+    let user = document.getElementById("user");
+    let msg = document.getElementById("msg");
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+        let val = user.value;
+
+        if(val.length < 5){
+            alert("Username must be at least 5 characters.");
+        }else{
+            alert("Form submitted! Username: " + val);
+        }
+    });
+
+    user.addEventListener("input", function(){
+        let val = user.value;
+        if(val.length > 0 && val.length < 5){
+            msg.textContent = "Too short.";
+        }else{
+            msg.textContent = "";
+        }
+    });
+</script>
+
+</body>
+</html>

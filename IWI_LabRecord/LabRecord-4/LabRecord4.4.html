@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create & Manipulate Elements</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#fff8f0;
+            padding:20px;
+        }
+        .wrap{
+            width:600px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius:6px;
+            border:1px solid #ccc;
+        }
+        button{
+            padding:8px 12px;
+            margin-right:8px;
+            margin-top:10px;
+            cursor:pointer;
+        }
+        ul{
+            list-style:none;
+            padding:0;
+            margin-top:15px;
+        }
+        li{
+            background:#eee;
+            padding:10px;
+            border-left:3px solid #007bff;
+            margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <h2>Manipulate List Items</h2>
+
+    <button id="add">Add Item</button>
+    <button id="remove">Remove Last</button>
+    <button id="modify">Modify First</button>
+
+    <ul id="list">
+        <li>Item 1</li>
+    </ul>
+</div>
+
+<script>
+    let addBtn = document.getElementById("add");
+    let rmvBtn = document.getElementById("remove");
+    let modBtn = document.getElementById("modify");
+    let list = document.getElementById("list");
+    let count = 1;
+
+    addBtn.addEventListener("click", function(){
+        count++;
+        let li = document.createElement("li");
+        li.textContent = "Item " + count;
+        list.appendChild(li);
+    });
+
+    rmvBtn.addEventListener("click", function(){
+        if(list.children.length > 1){
+            list.removeChild(list.lastElementChild);
+            count--;
+        }else{
+            alert("Can't remove the last item");
+        }
+    });
+
+    modBtn.addEventListener("click", function(){
+        let first = list.firstElementChild;
+        if(first){
+            first.textContent = "First item MODIFIED!";
+            first.style.background="#d1ecf1";
+            first.style.borderColor="#28a745";
+        }
+    });
+</script>
+
+</body>
+</html>

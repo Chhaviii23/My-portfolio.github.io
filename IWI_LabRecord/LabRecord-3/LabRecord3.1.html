@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef6ff;
+            padding: 30px;
+        }
+        .box {
+            width: 380px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+            border-radius: 6px;
+            border: 1px solid #bbb;
+            font-size: 1em;
+        }
+        button {
+            background: #4a90e2;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover {
+            background: #3a78c4;
+        }
+        #result {
+            margin-top: 18px;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            color: #1a7f33;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Simple Calculator</h2>
+
+    <input type="number" id="n1" placeholder="First number">
+    <select id="op">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+    </select>
+    <input type="number" id="n2" placeholder="Second number">
+
+    <button onclick="calc()">Calculate</button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    function calc() {
+        let a = parseFloat(document.getElementById("n1").value);
+        let b = parseFloat(document.getElementById("n2").value);
+        let op = document.getElementById("op").value;
+        let r;
+
+        if (isNaN(a) || isNaN(b)) {
+            r = "Please enter valid numbers.";
+        } else {
+            if (op === "add") r = a + b;
+            else if (op === "sub") r = a - b;
+            else if (op === "mul") r = a * b;
+            else if (op === "div") {
+                if (b === 0) r = "Cannot divide by zero.";
+                else r = a / b;
+            }
+        }
+
+        document.getElementById("result").innerText = "Result: " + r;
+    }
+</script>
+
+</body>
+</html>

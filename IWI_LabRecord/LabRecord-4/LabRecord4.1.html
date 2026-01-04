@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#fff2e0;
+            padding:20px;
+        }
+        .box{
+            width:600px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border:1px solid #ccc;
+            border-radius:6px;
+        }
+        button{
+            padding:8px 12px;
+            margin-top:10px;
+            cursor:pointer;
+        }
+        #p1{ color:#007bff; }
+        .p2{ color:#d33; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>DOM Manipulation Example</h2>
+
+    <p id="p1">This is the first paragraph (using ID).</p>
+    <p class="p2">This is the second paragraph (using class).</p>
+
+    <button onclick="change()">Change Text</button>
+</div>
+
+<script>
+    function change(){
+        let a = document.getElementById("p1");
+        a.innerHTML = "<b>Changed!</b> This was updated using getElementById.";
+
+        let b = document.querySelector(".p2");
+        b.innerHTML = "<b>Updated!</b> This was changed using querySelector.";
+    }
+</script>
+
+</body>
+</html>

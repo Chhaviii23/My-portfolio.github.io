@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Show / Hide Example</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#fff3e6;
+            padding:20px;
+        }
+        .wrap{
+            width:600px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border:1px solid #ccc;
+            border-radius:6px;
+        }
+        button{
+            padding:8px 12px;
+            margin-top:10px;
+            cursor:pointer;
+        }
+        #box{
+            padding:15px;
+            background:#d1ecf1;
+            border:1px solid #bcdfe6;
+            border-radius:4px;
+            margin-top:10px;
+        }
+        .hide{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <h2>Show / Hide Elements</h2>
+    <p>Click the button to hide or show the box.</p>
+
+    <button id="btn">Toggle Box</button>
+
+    <div id="box">
+        This is a box that can be shown or hidden.
+    </div>
+</div>
+
+<script>
+    let btn = document.getElementById("btn");
+    let box = document.getElementById("box");
+
+    btn.addEventListener("click", function(){
+        box.classList.toggle("hide");
+    });
+</script>
+
+</body>
+</html>

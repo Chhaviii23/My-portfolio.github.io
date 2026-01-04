@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Event Listeners</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#fffaef;
+            padding:20px;
+        }
+        .box{
+            width:300px;
+            height:100px;
+            background:#ffca3a;
+            border:1px solid #ddd;
+            text-align:center;
+            line-height:100px;
+            margin-bottom:10px;
+        }
+        .wrap{
+            width:600px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius:6px;
+            border:1px solid #ccc;
+        }
+        input{
+            padding:7px;
+            width:300px;
+            margin-top:8px;
+        }
+        button{
+            padding:8px 13px;
+            margin-top:12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <h2>Event Listener Demo</h2>
+    <p>Move your mouse on the box or type something.</p>
+
+    <div id="eventBox" class="box">Move Mouse Here</div>
+
+    <input id="keyBox" type="text" placeholder="Type here">
+
+    <p>Last Event: <b id="msg">None</b></p>
+
+    <button id="rmv">Remove Mouse Events</button>
+</div>
+
+<script>
+    let box = document.getElementById("eventBox");
+    let keyBox = document.getElementById("keyBox");
+    let msg = document.getElementById("msg");
+    let rmv = document.getElementById("rmv");
+
+    function mouseIn(){
+        msg.textContent = "Mouse Over Box";
+        box.style.background="#79d97c";
+    }
+
+    function mouseOut(){
+        msg.textContent = "Mouse Left Box";
+        box.style.background="#ffca3a";
+    }
+
+    box.addEventListener("mouseover", mouseIn);
+    box.addEventListener("mouseout", mouseOut);
+
+    keyBox.addEventListener("keyup", function(e){
+        msg.textContent = "Key Pressed: " + e.key;
+    });
+
+    rmv.addEventListener("click", function(){
+        box.removeEventListener("mouseover", mouseIn);
+        box.removeEventListener("mouseout", mouseOut);
+        msg.textContent = "Mouse events removed";
+        box.style.background="#999";
+        box.textContent = "Removed";
+    });
+</script>
+
+</body>
+</html>
