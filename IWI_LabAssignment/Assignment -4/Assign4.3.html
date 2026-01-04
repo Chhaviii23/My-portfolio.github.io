@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Merge Arrays</title>
+    <style>
+        body { font-family: sans-serif; background: #f5f5dc; padding: 20px; }
+        .container { background: #fff; padding: 20px; border-radius: 8px; }
+        code { background: #eee; padding: 3px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Merge Two Arrays Using the Spread Operator</h1>
+        <p>This shows how to combine two arrays into a single new one.</p>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const fruits = ['Apple', 'Banana', 'Orange'];
+        const vegetables = ['Carrot', 'Broccoli', 'Spinach'];
+
+        // Using the spread operator (...) to merge them
+        const food = [...fruits, ...vegetables];
+
+        const resultElement = document.getElementById('result');
+        resultElement.innerHTML = `
+            <p>First array (fruits): <code>[${fruits.join(', ')}]</code></p>
+            <p>Second array (vegetables): <code>[${vegetables.join(', ')}]</code></p>
+            <p>Merged array (food): <code>[${food.join(', ')}]</code></p>
+        `;
+    </script>
+</body>
+</html>

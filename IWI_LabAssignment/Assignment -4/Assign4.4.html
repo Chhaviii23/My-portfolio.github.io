@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Click Event</title>
+    <style>
+        body { font-family: sans-serif; background: #f5f5dc; padding: 20px; }
+        .container { background: #fff; padding: 20px; border-radius: 8px; }
+        button { background-color: #007bff; color: white; padding: 10px 15px; border: none; cursor: pointer; border-radius: 5px; }
+        #myParagraph { margin-top: 15px; font-style: italic; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add a Click Event to a Button</h1>
+        <p>Click the button below to change the text of the paragraph.</p>
+        
+        <button id="myButton">Click me!</button>
+        
+        <p id="myParagraph">This is the original text before you click the button.</p>
+    </div>
+
+    <script>
+        // Get the button and paragraph elements from the page
+        const button = document.getElementById('myButton');
+        const paragraph = document.getElementById('myParagraph');
+
+        // Add an event listener that waits for a 'click'
+        button.addEventListener('click', function() {
+            // This code runs when the button is clicked
+            paragraph.textContent = "Awesome! The text has been updated because you clicked the button.";
+            paragraph.style.fontStyle = 'normal';
+            paragraph.style.color = 'green';
+        });
+    </script>
+</body>
+</html>

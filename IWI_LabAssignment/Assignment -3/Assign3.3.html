@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Array</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f8ff; padding: 20px; }
+        .container { background: #fff; padding: 20px; border-radius: 8px; }
+        code { background: #eee; padding: 3px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find the Sum of All Numbers in an Array</h1>
+        <p>This script adds up all the numbers in an array and shows the total.</p>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const numberArray = [10, 25, 5, 40];
+        let sum = 0;
+
+        for (let i = 0; i < numberArray.length; i++) {
+            sum = sum + numberArray[i];
+        }
+
+        const resultElement = document.getElementById('result');
+        resultElement.innerHTML = `
+            <p>The array of numbers is: <code>[${numberArray.join(', ')}]</code></p>
+            <p>The sum of all numbers is: <strong>${sum}</strong></p>
+        `;
+    </script>
+</body>
+</html>

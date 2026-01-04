@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Even and Odd</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f8ff; padding: 20px; }
+        .container { background: #fff; padding: 20px; border-radius: 8px; }
+        code { background: #eee; padding: 3px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Count Even and Odd Numbers</h1>
+        <p>This script counts how many even and odd numbers are in a specific array.</p>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        const numbers = [5, 12, 8, 3, 17, 6, 2, 9];
+        
+        let evenCount = 0;
+        let oddCount = 0;
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 === 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+
+        const resultElement = document.getElementById('result');
+        resultElement.innerHTML = `
+            The array is: <code>[${numbers.join(', ')}]</code><br>
+            Number of even numbers: <strong>${evenCount}</strong><br>
+            Number of odd numbers: <strong>${oddCount}</strong>
+        `;
+    </script>
+</body>
+</html>

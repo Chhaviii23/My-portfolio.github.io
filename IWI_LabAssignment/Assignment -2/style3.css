@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.4s ease;
+}
+
+.info-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+
+/* MOBILE VIEW (Default) */
+body {
+    background-color: #e0f2f1; /* Light Teal */
+}
+.grid-container {
+    grid-template-columns: 1fr; /* 1 column */
+}
+
+
+/* TABLET VIEW */
+@media (min-width: 768px) {
+    body {
+        background-color: #b2dfdb; /* Medium Teal */
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+
+/* DESKTOP VIEW */
+@media (min-width: 1024px) {
+    body {
+        background-color: #80cbc4; /* Darker Teal */
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}

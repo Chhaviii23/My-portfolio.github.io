@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Duplicates</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f8ff; padding: 20px; }
+        .container { background: #fff; padding: 20px; border-radius: 8px; }
+        code { background: #eee; padding: 3px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Remove Duplicate Values From an Array</h1>
+        <p>Here I'm taking an array that has duplicate numbers and creating a new one without them.</p>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const arrayWithDuplicates = ['Apple', 'Banana', 'Orange', 'Apple', 'Grapes', 'Banana'];
+
+        // Using a Set is an easy way to get only unique values
+        const uniqueArray = [...new Set(arrayWithDuplicates)];
+
+        const resultElement = document.getElementById('result');
+        resultElement.innerHTML = `
+            <p>Original Array: <code>[${arrayWithDuplicates.join(', ')}]</code></p>
+            <p>Array with duplicates removed: <code>[${uniqueArray.join(', ')}]</code></p>
+        `;
+    </script>
+</body>
+</html>

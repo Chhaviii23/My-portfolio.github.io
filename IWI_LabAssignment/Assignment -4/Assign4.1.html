@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>isEven Arrow Function</title>
+    <style>
+        body { font-family: sans-serif; background: #f5f5dc; padding: 20px; }
+        .container { background: #fff; padding: 20px; border-radius: 8px; }
+        code { background: #eee; padding: 3px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Write an Arrow Function isEven(num)</h1>
+        <p>I created an arrow function named <code>isEven</code>. It returns <code>true</code> if a number is even and <code>false</code> if it's odd.</p>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const isEven = (num) => {
+            return num % 2 === 0;
+        };
+
+        const number1 = 14;
+        const number2 = 21;
+        
+        const resultElement = document.getElementById('result');
+        resultElement.innerHTML = `
+            <p>Checking the number <strong>${number1}</strong>. Is it even? <code>${isEven(number1)}</code></p>
+            <p>Checking the number <strong>${number2}</strong>. Is it even? <code>${isEven(number2)}</code></p>
+        `;
+    </script>
+</body>
+</html>

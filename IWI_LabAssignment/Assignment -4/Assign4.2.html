@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Multiline String</title>
+    <style>
+        body { font-family: sans-serif; background: #f5f5dc; padding: 20px; }
+        .container { background: #fff; padding: 20px; border-radius: 8px; }
+        pre { background: #eee; padding: 15px; border-radius: 5px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create a Multiline String</h1>
+        <p>I used template literals (the backticks ``) to make a string that spans three lines.</p>
+        <pre id="message"></pre>
+    </div>
+
+    <script>
+        const threeLineMessage = `This is the first line of the message.
+This is the second line, right below the first.
+And this is the final, third line.`;
+
+        document.getElementById('message').textContent = threeLineMessage;
+    </script>
+</body>
+</html>

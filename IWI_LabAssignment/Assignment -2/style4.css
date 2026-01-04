@@ -1,0 +1,29 @@
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.animated-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #00796b; /* Initial Teal color */
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 121, 107, 0.2);
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Styles for when the mouse hovers over the button */
+.animated-button:hover {
+    background-color: #004d40; /* Darker Teal on hover */
+    
+    /* Increase size by 5% and move it up slightly */
+    transform: scale(1.05) translateY(-3px);
+}
